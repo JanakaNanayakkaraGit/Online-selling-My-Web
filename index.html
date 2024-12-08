@@ -11,6 +11,9 @@
             box-sizing: border-box;
             font-family: Arial, sans-serif;
         }
+
+        .clearfix {overflow: auto}
+
         body {
             background-color: #f4f4f4;
         }
@@ -37,9 +40,11 @@
         .nav-menu {
             display: flex;
             list-style: none;
+
         }
         .nav-menu li {
             margin-left: 20px;
+            color: red;
         }
         .nav-menu a {
             text-decoration: none;
@@ -48,7 +53,8 @@
             transition: color 0.3s ease;
         }
         .nav-menu a:hover {
-            color: #007bff;
+            color: #8016f0;
+
         }
         .search-bar {
             display: flex;
@@ -114,13 +120,13 @@
 </head>
 <body>
     <header>
-        <div class="container header-content">
-            <div class="logo">Welcome to Janaka nanayakkara <> Online Store</div>
-            <div class="logo">Online Store</div>
+        <div class="container header-content clearfix ">
+            <div class="logo">Welcome to Janaka Nanayakkara...Online Store</div>
+            <!--<div class="logo">Online Store</div>-->
             <nav>
                 <ul class="nav-menu">
                     <li><a href="#">Home</a></li>
-                    <li><a href="#">Abouth</a></li>
+                    <li><a href="E:\MYWEB\Online Store\about.html">About</a></li>
                     <li><a href="#">Products</a></li>
                     <li><a href="#">Contact Us</a></li>
                 </ul>
@@ -130,8 +136,9 @@
 
     <div class="container">
         <div class="search-bar">
-            <input type="text" placeholder="Search your products...">
-            <button>Search</button>
+               <!-- <form method="get" action="index.html"> -->
+                <input type="text"  name ="search-bar" placeholder="Search your products...">
+                <button type="submit">Search</button>
         </div>
 
         <div class="featured-products">
@@ -168,7 +175,7 @@
 
     <footer>
         <div class="container">
-            © 2024 Online Store. සියලුම හිමිකම් ඇවිරිණි.
+            © 2024 Online Store. Janaka nanayakkara . සියලුම හිමිකම් ඇවිරිණි.
         </div>
     </footer>
 </body>
